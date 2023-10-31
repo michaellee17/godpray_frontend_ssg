@@ -1,0 +1,33 @@
+/* src/assets/main.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+body {
+    font-family: 'Noto Serif TC', serif;
+  }
+  .iframe_container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+ }
+ 
+ .iframe_container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+ }
+ .video-wrapper {
+   width:100%;
+   position: relative;
+   padding-bottom: 56.25%; /* 16:9 寬高比的計算：(9 / 16) * 100% = 56.25% */
+   overflow: hidden;
+}
+
+.video-wrapper iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}

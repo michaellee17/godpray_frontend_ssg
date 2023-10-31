@@ -13,6 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+*{
+  color:#000000;
+}
 
 a {
   font-weight: 500;
@@ -24,11 +27,11 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  /* margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; */
 }
 
 h1 {
@@ -60,10 +63,10 @@ button:focus-visible {
 }
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: center; */
 }
 
 @media (prefers-color-scheme: light) {
@@ -78,3 +81,42 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.vfm__content{
+  background-color: #ffffff !important;
+}
+.vfm__content.inset-0{
+  background-color: transparent !important;
+}
+.custom_position{
+  margin-top: 80px;
+  margin-right: 150px;
+  display: flex;
+  justify-content: flex-end;
+  height: max-content;
+  position: fixed;
+  right:0;
+}
+.custom_position::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 128px;
+  border-width: 0px 8px 20px 8px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+@media(width<1600px){
+  .custom_position::before{
+    display: none;
+  }
+  .custom_position{
+    margin-right: 10px;
+  }
+}
+input{
+  background-color: #ffffff;
+}
+.swiper-wrapper{
+  align-items:center !important;
+}
+

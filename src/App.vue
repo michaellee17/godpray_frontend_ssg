@@ -1,18 +1,16 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { ModalsContainer } from 'vue-final-modal'
+import Header from "@/components/global/header/Header.vue"
+import Footer from './components/global/Footer.vue'
 </script>
 
 <template>
   <div>
+    <Header />
     <router-view  :key="$route.path"/>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <Footer />
+    <ModalsContainer />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
